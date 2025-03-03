@@ -58,8 +58,8 @@ struct HomeScreen: View {
                     }
                         .frame(height: 120)
                         .frame(maxWidth: .infinity)
-                        .foregroundColor(.gray)
-                        .border(.gray, width: 4)
+                        .foregroundColor(Color(.secondary))
+                        .border(Color(.secondary), width: 4)
                         .cornerRadius(7.5)
                 }
                 .padding()
@@ -70,7 +70,7 @@ struct HomeScreen: View {
                         Text("Multiple Choice")
                             .frame(height: 80)
                             .frame(maxWidth: .infinity)
-                            .background(.gray)
+                            .background(Color(.secondary))
                             .foregroundColor(.white)
                             .cornerRadius(10)
                             .shadow(radius: 5)
@@ -79,7 +79,7 @@ struct HomeScreen: View {
                         Text("Written")
                             .frame(height: 80)
                             .frame(maxWidth: .infinity)
-                            .background(.gray)
+                            .background(Color(.secondary))
                             .foregroundColor(.white)
                             .cornerRadius(10)
                             .shadow(radius: 5)
@@ -89,10 +89,11 @@ struct HomeScreen: View {
                 HStack(){
                     NavigationLink(destination: HomeScreen(topic: topic)){
                         Text("Grammar exercises")
+                            .bold()
                             .frame(height: 80)
                             .frame(maxWidth: .infinity)
-                            .foregroundColor(.gray)
-                            .border(.gray, width: 4)
+                            .foregroundColor(Color(.secondary))
+                            .border(Color(.secondary), width: 4)
                             .cornerRadius(7.5)
                     }
                     Text("  ")
@@ -115,7 +116,7 @@ struct HomeScreen: View {
                     Text("Marathon Mode    \(Image(systemName: "flag.fill"))")
                         .frame(height: 80)
                         .frame(maxWidth: .infinity)
-                        .background(.gray)
+                        .background(Color(.secondary))
                         .foregroundColor(.white)
                         .cornerRadius(10)
                         .shadow(radius: 5)
